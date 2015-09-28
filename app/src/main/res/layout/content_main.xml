@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <mio.kon.yyb.touchevent.GrandparentView
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <mio.kon.yyb.touchevent.ParentView
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+            <mio.kon.yyb.touchevent.ChildView
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        </mio.kon.yyb.touchevent.ParentView>
+    </mio.kon.yyb.touchevent.GrandparentView>
+</RelativeLayout>
